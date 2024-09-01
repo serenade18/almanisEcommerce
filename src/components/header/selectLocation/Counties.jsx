@@ -31,8 +31,8 @@ const Counties = () => {
     );
 
     return (
-        <div className="selectorDrop cursor-pointer me-2">
-            <span className="openLocation align-items-center" onClick={toggleLocation}>
+        <div className="selectorDrop cursor-pointer flex-grow me-2">
+            <span className="openLocation align-items-center text-primary" onClick={toggleLocation}>
                 <FmdGoodOutlinedIcon className="locationIcon ms-2" /> {selectedLocation || 'Your location'} {isOpenLocation ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />}
             </span>
             {isOpenLocation && (

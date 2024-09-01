@@ -8,7 +8,7 @@
     align-items: center; /* Vertically center the text and icons */
     justify-content: space-between; /* Space between the text and the icon */
     cursor: pointer; /* Pointer cursor on hover */
-    padding: 10px 15px; /* Adjust padding */
+    padding: 10px 5px; /* Adjust padding */
 }
 
 .selectDrop .openDrop svg {

@@ -1,3 +1,7 @@
+:root {
+    --bs-primary: #3bb77e;
+}
+
 .selectorDrop {
     position: relative; /* Ensure the dropdown positioning is relative to this container */
     width: 27%;

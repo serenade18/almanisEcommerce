@@ -49,3 +49,31 @@ header .headersearch .search .searchicon {
     opacity: 0.5;
     font-size: 30px !important;
 }
+
+header .headerTabs {
+    padding-left: 0px;
+}
+
+header .headerTabs li {
+    padding-left: 30px;
+}
+
+header .headerTabs li span{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: -14px;
+}
+
+header .headerTabs li span.badge{
+    position: relative;
+    left: 5px;
+    top: -9px;
+    color: #ffffff;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+}

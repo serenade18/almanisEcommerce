@@ -32,9 +32,41 @@ const Header = () => {
               </div>
             </div>
 
-            {/* Additional Space (Optional) */}
-            <div className="col-12 col-sm-12 col-lg-5 ">
-              <Counties/>
+            {/* county and wishlist section */}
+            <div className="col-12 col-sm-6 col-lg-5 d-flex align-items-center">
+                <Counties/>
+                <div className="ml-auto d-flex align-items-center">
+                    <ul className="list list-inline mb-0 headerTabs">
+                        <li className='list-inline-item'>
+                            <span>
+                                <img src={icons.Refresh}/>
+                                <span className='badge bg-success rounded-circle'>3</span>
+                                Compare
+                            </span>
+                        </li>
+                        <li className='list-inline-item'>
+                            <span>
+                                <img src={icons.Wish}/>
+                                <span className='badge bg-success rounded-circle'>3</span>
+                                Wishlist
+                            </span>
+                        </li>
+                        <li className='list-inline-item'>
+                            <span>
+                                <img src={icons.Cart}/>
+                                <span className='badge bg-success rounded-circle'>3</span>
+                                Cart
+                            </span>
+                        </li>
+                        <li className='list-inline-item'>
+                            <span>
+                                <img src={icons.User}/>
+                                Account
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+              
             </div>
           </div>
         </div>

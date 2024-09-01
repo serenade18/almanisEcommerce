@@ -6,13 +6,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bs-primary: #3bb77e;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
 .container-fluid {
   width: 100%;
-  padding: 0px 45px;
+  padding-top: 0px ;
+  padding-left: 100px;
+  padding-right: 100px;
   margin-right: auto;
   margin-left: auto;
 }
