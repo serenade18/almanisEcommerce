@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import '../header/Header.css';
 
-function Header() {
+const Header = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <header>
+        <div className="container-fluid"></div>
+      </header>
+    </>
   )
 }
 
