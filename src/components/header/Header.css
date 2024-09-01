@@ -19,6 +19,7 @@ header .headersearch .selectDrop {
     font-size: 17px;
     font-weight: 500;
     position: relative;
+    white-space: nowrap;
 }
 
 header .headersearch .selectDrop:after {
@@ -27,7 +28,7 @@ header .headersearch .selectDrop:after {
     height: 30px;
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
-    top: 0px;
+    top: 6px;
     bottom: 2px;
     right: 0px;
 }
@@ -42,4 +43,9 @@ header .headersearch .search input {
     height: 40px;
     border: 0px;
     outline: none !important;
+}
+
+header .headersearch .search .searchicon {
+    opacity: 0.5;
+    font-size: 30px !important;
 }
