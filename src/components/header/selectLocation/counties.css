@@ -1,0 +1,69 @@
+.selectorDrop {
+    position: relative; /* Ensure the dropdown positioning is relative to this container */
+    width: 27%;
+}
+
+.selectorDrop .openLocation {
+    display: block;
+    align-items: center; /* Vertically center the text and icons */
+    justify-content: space-between; /* Space between the text and the icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px 15px; /* Adjust padding */
+    background-color: #fff; /* Ensure the background color matches */
+    border: 3px ; /* Add a border for better visual appearance */
+    border-radius: 3px; /* Match border-radius with selector */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.selection {
+    width: 230px;
+    background: #fff;
+    position: absolute;
+    top: 100%; /* Directly below the text */
+    left: 0; /* Align with the left edge of the container */
+    z-index: 100;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 15px;
+    max-height: 200px; /* Limit the height to avoid overflow */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+.searchField input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #4f9777;
+    outline: none;
+    padding: 0 15px;
+    border-radius: 3px;
+}
+
+.selectLocation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.selectLocation li {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.selectLocation li:hover {
+    background: #3bb77e;
+    color: #fff;
+}
+
+.selectLocation li.active {
+    background: #ccc; /* Background color for the active category */
+    color: #000; /* Text color for the active category */
+}
+
+
+.locationIcon {
+    opacity: 0.5;
+    font-size: 20px !important;
+}

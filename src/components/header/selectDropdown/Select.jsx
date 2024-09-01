@@ -11,7 +11,6 @@ const Select = () => {
 
     const categories = ['All Categories', 'Pishori', 'Komboka', 'Brown', 'Bran', 'Husk', 'Broken'];
 
-
     const toggleDrop = () => {
         setIsOpenDrop(!isOpenDrop);
     };
@@ -21,9 +20,9 @@ const Select = () => {
     };
 
     const handleCategorySelect = (category) => {
-        setSelectedCategory(category); // Set selected category
+        setSelectedCategory(category);
         setIsOpenDrop(false);
-        setSearchQuery(''); // Clear search query after selection
+        setSearchQuery('');
     };
 
     const filteredCategories = categories.filter(category =>
@@ -31,16 +30,12 @@ const Select = () => {
     );
 
     return (
-        <ClickAwayListener onClickAway={toggleDrop}>
-            <div className="selectDrop cursor-pointer me-2">
-                <span
-                    className="openDrop"
-                    onClick={toggleDrop}
-                >
-                    {selectedCategory || 'All Categories'} {isOpenDrop ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />}
-                </span>
-                {
-                    isOpenDrop &&
+        <div className="selectDrop cursor-pointer me-2">
+            <span className="openDrop" onClick={toggleDrop}>
+                {selectedCategory || 'All Categories'} {isOpenDrop ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />}
+            </span>
+            {isOpenDrop && (
+                <ClickAwayListener onClickAway={() => setIsOpenDrop(false)}>
                     <div className="selector">
                         <div className="searchField">
                             <input
@@ -50,28 +45,25 @@ const Select = () => {
                                 onChange={handleSearchChange}
                             />
                             <ul className="selectcategory">
-                                
-                                {
-                                    filteredCategories.length > 0 ? (
-                                        filteredCategories.map((category, index) => (
-                                            <li
-                                                key={index}
-                                                onClick={() => handleCategorySelect(category)}
-                                                className={category === selectedCategory ? 'active' : ''}
-                                            >
-                                                {category}
-                                            </li>
-                                        ))
-                                    ) : (
-                                        <li>No categories found</li>
-                                    )
-                                }
+                                {filteredCategories.length > 0 ? (
+                                    filteredCategories.map((category, index) => (
+                                        <li
+                                            key={index}
+                                            onClick={() => handleCategorySelect(category)}
+                                            className={category === selectedCategory ? 'active' : ''}
+                                        >
+                                            {category}
+                                        </li>
+                                    ))
+                                ) : (
+                                    <li>No categories found</li>
+                                )}
                             </ul>
                         </div>
                     </div>
-                }
-            </div>
-        </ClickAwayListener>
+                </ClickAwayListener>
+            )}
+        </div>
     );
 };
 

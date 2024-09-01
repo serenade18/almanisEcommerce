@@ -3,6 +3,7 @@ import '../header/Header.css';
 import icons from '../../constants/icons';
 import SearchIcon from '@mui/icons-material/Search';
 import Select from './selectDropdown/Select';
+import Counties from './selectLocation/Counties';
 
 const Header = () => {
   return (
@@ -33,7 +34,7 @@ const Header = () => {
 
             {/* Additional Space (Optional) */}
             <div className="col-12 col-sm-12 col-lg-5 ">
-              <Select/>
+              <Counties/>
             </div>
           </div>
         </div>
