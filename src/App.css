@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0px 45px;
+  margin-right: auto;
+  margin-left: auto;
 }
