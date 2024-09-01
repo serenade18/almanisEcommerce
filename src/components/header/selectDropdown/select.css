@@ -23,7 +23,7 @@
     left: 0; /* Align with the left edge of the container */
     z-index: 100;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 15px;
     max-height: 200px; /* Limit the height to avoid overflow */
     overflow-y: auto; /* Enable vertical scrolling if needed */
@@ -35,7 +35,7 @@
     border: 1px solid #4f9777;
     outline: none;
     padding: 0 15px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .selectcategory {
@@ -55,9 +55,11 @@
 .selectcategory li:hover {
     background: #3bb77e;
     color: #fff;
+    border-radius: 7px;
 }
 
 .selectcategory li.active {
     background: #ccc; /* Background color for the active category */
     color: #000; /* Text color for the active category */
+    border-radius: 7px;
 }

@@ -5,6 +5,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import Select from './selectDropdown/Select';
 import Counties from './selectLocation/Counties';
 
+import Button from '@mui/material/Button';
+
 const Header = () => {
   return (
     <>
@@ -63,6 +65,14 @@ const Header = () => {
                                 <img src={icons.User}/>
                                 Account
                             </span>
+
+                            <ul className="dropdownMenu">
+                                <li><Button>My Account</Button></li>
+                                <li><Button>Order Tracking</Button></li>
+                                <li><Button>My Wishlist</Button></li>
+                                <li><Button>Settings</Button></li>
+                                <li><Button>Sign out</Button></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>

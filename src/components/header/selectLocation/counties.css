@@ -15,7 +15,7 @@
     padding: 10px 15px; /* Adjust padding */
     background-color: #fff; /* Ensure the background color matches */
     border: 3px ; /* Add a border for better visual appearance */
-    border-radius: 3px; /* Match border-radius with selector */
+    border-radius: 5px; /* Match border-radius with selector */
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -27,7 +27,7 @@
     left: 0; /* Align with the left edge of the container */
     z-index: 100;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 15px;
     max-height: 200px; /* Limit the height to avoid overflow */
     overflow-y: auto; /* Enable vertical scrolling if needed */
@@ -39,7 +39,7 @@
     border: 1px solid #4f9777;
     outline: none;
     padding: 0 15px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .selectLocation {
@@ -59,11 +59,13 @@
 .selectLocation li:hover {
     background: #3bb77e;
     color: #fff;
+    border-radius: 7px;
 }
 
 .selectLocation li.active {
     background: #ccc; /* Background color for the active category */
     color: #000; /* Text color for the active category */
+    border-radius: 7px;
 }
 
 

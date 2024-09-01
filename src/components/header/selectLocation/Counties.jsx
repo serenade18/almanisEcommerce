@@ -4,13 +4,15 @@ import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 import { ClickAwayListener } from '@mui/material';
+import counties from '../../../constants/counties';
 
 const Counties = () => {
     const [isOpenLocation, setIsOpenLocation] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedLocation, setSelectedLocation] = useState('');
 
-    const location = ['Nairobi', 'Mombasa', 'Kisumu', 'Nakuru', 'Eldoret'];
+    // Flatten the counties data to get just the county names
+    const location = counties.map(county => county.countyName);
 
     const toggleLocation = () => {
         setIsOpenLocation(!isOpenLocation);
