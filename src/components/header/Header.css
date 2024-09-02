@@ -16,7 +16,7 @@ header .headersearch {
 
 header .headersearch .selectDrop {
     width: 18%;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 500;
     position: relative;
     white-space: nowrap;
@@ -41,6 +41,7 @@ header .headersearch .search {
 header .headersearch .search input {
     width: 100%;
     height: 40px;
+    font-size: 14px;
     border: 0px;
     outline: none !important;
 }
