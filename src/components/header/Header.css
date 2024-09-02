@@ -78,29 +78,61 @@ header .headerTabs li span.badge{
     line-height: 12px;
 }
 
+/* Hide the dropdown menu initially */
 .dropdownMenu {
+    display: none; /* Hide by default */
     position: absolute;
-    top: 40px;
+    top: 25px;
     right: 0px;
     width: 180px;
     height: auto;
     background: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
     padding: 10px 0px;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    z-index: 1000; /* Ensure the dropdown is above other content */
 }
 
+/* Show the dropdown menu on hover */
+.headerTabs li:hover .dropdownMenu {
+    display: block; /* Show the dropdown on hover */
+}
+
+/* Show the dropdown menu on hover */
+.headerTabs li:hover .dropdownMenu,
+.headerTabs li .dropdownMenu:hover {
+    display: block; /* Show the dropdown on hover */
+}
+
+/* Style for the dropdown items */
 .dropdownMenu li {
     width: 100%;
     list-style: none;
     margin: 0px !important;
 }
 
+/* Style for the buttons inside the dropdown */
 .dropdownMenu li button {
     width: 100% !important;
     text-align: left !important;
     justify-content: flex-start !important;
-    color: #000 !important;
+    color: #222222 !important;
     text-transform: capitalize !important;
-    font-size: 14px !important;
+    font-size: 12px !important;
     padding: 10px 15px !important;
+    background: none; /* Ensure the button has a transparent background */
+    border: none; /* Remove default button borders */
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the icons inside the dropdown buttons */
+.dropdownMenu li button svg {
+    opacity: 0.5;
+    margin-right: 8px !important;
+}
+
+.dropdownMenu li button:hover {
+    background: #f1f1f1;
 }

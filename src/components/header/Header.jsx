@@ -6,6 +6,11 @@ import Select from './selectDropdown/Select';
 import Counties from './selectLocation/Counties';
 
 import Button from '@mui/material/Button';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import GpsFixedOutlinedIcon from '@mui/icons-material/GpsFixedOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import SettingsInputCompositeOutlinedIcon from '@mui/icons-material/SettingsInputCompositeOutlined';
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 
 const Header = () => {
   return (
@@ -67,11 +72,36 @@ const Header = () => {
                             </span>
 
                             <ul className="dropdownMenu">
-                                <li><Button>My Account</Button></li>
-                                <li><Button>Order Tracking</Button></li>
-                                <li><Button>My Wishlist</Button></li>
-                                <li><Button>Settings</Button></li>
-                                <li><Button>Sign out</Button></li>
+                                <li>
+                                  <Button>
+                                    <PersonOutlineOutlinedIcon/>
+                                    My Account
+                                  </Button>
+                                </li>
+                                <li>
+                                  <Button>
+                                    <GpsFixedOutlinedIcon/>
+                                    Order Tracking
+                                  </Button>
+                                </li>
+                                <li>
+                                  <Button>
+                                    <FavoriteBorderOutlinedIcon/>
+                                    My Wishlist
+                                  </Button>
+                                </li>
+                                <li>
+                                  <Button>
+                                    <SettingsInputCompositeOutlinedIcon/>
+                                    Settings
+                                  </Button>
+                                </li>
+                                <li>
+                                  <Button>
+                                    <LogoutOutlinedIcon/>
+                                    Sign out
+                                  </Button>
+                                </li>
                             </ul>
                         </li>
                     </ul>
