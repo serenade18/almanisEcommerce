@@ -12,6 +12,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import SettingsInputCompositeOutlinedIcon from '@mui/icons-material/SettingsInputCompositeOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import Info from './info/Info';
+import Nav from './nav/Nav';
 
 const Header = () => {
   return (
@@ -113,6 +114,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+        <Nav/>
       </header>
     </>
   );

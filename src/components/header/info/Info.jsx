@@ -61,7 +61,7 @@ const Info = () => {
                                 </li>
                                 <li>
                                     <a className="language-dropdown-active" href="#" onClick={openCurrency}>
-                                        <img src={selectedCurrency.flag} style={{height:'20px', width: '20px'}} alt={selectedCurrency.code} />
+                                        <img src={selectedCurrency.flag} style={{height:'20px', width: '20px', marginRight: "5px"}} alt={selectedCurrency.code} />
                                          {selectedCurrency.code}
                                         {isCurrencyOpen ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />} 
                                     </a>
@@ -71,7 +71,7 @@ const Info = () => {
                                                 {currencies.map((currency) => (
                                                     <li key={currency.code} onClick={() => handleSelectedCurrency(currency)}>
                                                         <span>
-                                                            <img src={currency.flag} style={{height:'20px', width: '20px'}} alt={currency.code} />
+                                                            <img src={currency.flag} style={{height:'20px', width: '20px', marginRight: "5px"}} alt={currency.code} />
                                                             {currency.code} - {currency.name}
                                                         </span>
                                                     </li>
