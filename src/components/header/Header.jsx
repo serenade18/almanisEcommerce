@@ -11,11 +11,14 @@ import GpsFixedOutlinedIcon from '@mui/icons-material/GpsFixedOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import SettingsInputCompositeOutlinedIcon from '@mui/icons-material/SettingsInputCompositeOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import Info from './info/Info';
 
 const Header = () => {
   return (
     <>
+      {/* <Info/> */}
       <header>
+        <Info/>
         <div className="container-fluid">
           <div className="row align-items-center">
             {/* Logo */}

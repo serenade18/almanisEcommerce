@@ -4,11 +4,12 @@
 
 .selectorDrop {
     position: relative; /* Ensure the dropdown positioning is relative to this container */
-    width: 27%;
+    width: 33%;
 }
 
 .selectorDrop .openLocation {
     display: block;
+    font-size: 14px;
     align-items: center; /* Vertically center the text and icons */
     justify-content: space-between; /* Space between the text and the icon */
     cursor: pointer; /* Pointer cursor on hover */
