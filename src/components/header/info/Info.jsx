@@ -3,11 +3,28 @@ import '../info/info.css';
 import { ClickAwayListener } from '@mui/material';
 import flags from '../../../constants/flags';
 
+import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
+
+const currencies = [
+    { code: 'KES', name: 'Kenyan Shilling', flag: flags.Kenya },
+    { code: 'TZS', name: 'Tanzanian Shilling', flag: flags.Tanzania },
+    { code: 'UGX', name: 'Ugandan Shilling', flag: flags.Uganda },
+    { code: 'RWF', name: 'Rwandan Franc', flag: flags.Rwanda },
+    { code: 'BIF', name: 'Burundian Franc', flag: flags.Burundi }
+];
+
 const Info = () => {
     const [isCurrencyOpen, setIsCurrencyOpen] = useState(false);
+    const [selectedCurrency, setSelectedCurrency] = useState(currencies[0]); // Default to KES
 
     const openCurrency = () => {
         setIsCurrencyOpen(!isCurrencyOpen);
+    };
+
+    const handleSelectedCurrency = (currency) => {
+        setSelectedCurrency(currency);
+        setIsCurrencyOpen(false);
     };
 
     return (
@@ -44,36 +61,21 @@ const Info = () => {
                                 </li>
                                 <li>
                                     <a className="language-dropdown-active" href="#" onClick={openCurrency}>
-                                        KES <i className="fi-rs-angle-small-down"></i>
+                                        <img src={selectedCurrency.flag} style={{height:'20px', width: '20px'}} alt={selectedCurrency.code} />
+                                         {selectedCurrency.code}
+                                        {isCurrencyOpen ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />} 
                                     </a>
                                     {isCurrencyOpen && (
                                         <ClickAwayListener onClickAway={() => setIsCurrencyOpen(false)}>
                                             <ul className="language-dropdown">
-                                                <li>
-                                                    <span>
-                                                        <img src={flags.Kenya} style={{height:'20px', width: '20px'}} alt="KE" />KES - Kenyan Shilling
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <img src={flags.Tanzania} style={{height:'20px', width: '20px'}} alt="TZ" />TZS - Tanzanian Shilling
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <img src={flags.Uganda} style={{height:'20px', width: '20px'}} alt="UG" />UGX - Ugandan Shilling
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <img src={flags.Rwanda} style={{height:'20px', width: '20px'}} alt="RWA" />RWF - Rwandan Franc
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span>
-                                                        <img src={flags.Burundi} style={{height:'20px', width: '20px'}} alt="BUR" />BIF - Burundian Franc
-                                                    </span>
-                                                </li>
+                                                {currencies.map((currency) => (
+                                                    <li key={currency.code} onClick={() => handleSelectedCurrency(currency)}>
+                                                        <span>
+                                                            <img src={currency.flag} style={{height:'20px', width: '20px'}} alt={currency.code} />
+                                                            {currency.code} - {currency.name}
+                                                        </span>
+                                                    </li>
+                                                ))}
                                             </ul>
                                         </ClickAwayListener>
                                     )}
