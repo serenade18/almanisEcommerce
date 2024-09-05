@@ -9,9 +9,9 @@ const Layout = ({ children }) => {
       <Header />
       
       {/* Main content with space added below the header */}
-      <main style={{ marginTop: '180px' }}> 
+      <div style={{ marginTop: '180px' }}> 
         {children}
-      </main>
+      </div>
 
       {/* Footer at the bottom */}
       <Footer />
