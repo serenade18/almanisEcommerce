@@ -35,47 +35,47 @@ const Nav = () => {
                                 </li>
                                 <li className="list-inline-item">
                                     <Button>
-                                        <Link>Home</Link>
+                                        <Link to={'/'}>Home</Link>
                                     </Button>
                                 </li>
                                 <li className="list-inline-item">
                                     <Button>
-                                        <Link>About</Link>
+                                        <Link to={'/about'}>About</Link>
                                     </Button>
                                 </li>
                                 <li className="list-inline-item">
                                     <Button>
-                                        <Link>Shop</Link>
+                                        <Link to={'/shop'}>Shop</Link>
                                     </Button>
                                 </li>
-                                <li className="list-inline-item">
+                                {/* <li className="list-inline-item">
                                     <Button>
                                         <Link>
                                             Mega menu <KeyboardArrowDownOutlinedIcon className='ms-0'/>
                                         </Link>
                                     </Button>
-                                </li>
+                                </li> */}
                                 <li className="list-inline-item">
                                     <Button>
-                                        <Link>Become a partner</Link>
+                                        <Link to={'/partner'}>Become a partner</Link>
                                     </Button>
                                 </li>
                                 <li className="list-inline-item">
                                     <Button>
-                                        <Link>Contact</Link>
+                                        <Link to={'/contact'}>Contact</Link>
                                     </Button>
                                 </li>
                               </ul>
                             </nav>
                         </div>
                         <div className="col-md-2 col-sm-6 col-12 d-flex align-items-center"> 
-                            <div className="phoneNo d-flex align-items-center">
+                            <div className="phoneNo d-flex align-items-center ml-auto">
                                 <span>
                                     <HeadsetOutlinedIcon className='text-secondary me-2'/>
                                 </span>
                                 <div className="info ml-3">
                                     <h5 className="text-success mb-0">+254 792 902 809</h5>
-                                    <p className="mb-0 text-secondary">24/7 support</p>
+                                    <p className="mb-0 text-secondary mt-1">24/7 support center</p>
                                 </div>
                             </div>
                         </div>

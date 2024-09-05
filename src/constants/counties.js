@@ -1,5 +1,9 @@
 const counties = [
     {
+      conuty_id: 0,
+      countyName: 'Your Location'
+    },
+    {
       county_id: 1,
       countyName: 'MOMBASA',
       countyCode: '001',

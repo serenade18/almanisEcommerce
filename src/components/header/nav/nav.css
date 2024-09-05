@@ -15,6 +15,7 @@
 .nav nav ul li button {
     text-transform: capitalize !important;
     padding: 21px 20px !important;
+    color: #3bb77e !important;
 }
 
 .nav nav ul li button a {
