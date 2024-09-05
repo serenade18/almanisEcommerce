@@ -5,7 +5,7 @@ const counties = [
     },
     {
       county_id: 1,
-      countyName: 'MOMBASA',
+      countyName: 'Mombasa',
       countyCode: '001',
       totalConstituencies: 6,
       totalWards: 30,
@@ -278,7 +278,7 @@ const counties = [
     },
     {
       county_id: 2,
-      countyName: 'KWALE',
+      countyName: 'Kwale',
       countyCode: '002',
       totalConstituencies: 4,
       totalWards: 20,
@@ -463,7 +463,7 @@ const counties = [
     },
     {
       county_id: 3,
-      countyName: 'KILIFI',
+      countyName: 'Kilifi',
       countyCode: '003',
       totalConstituencies: 6,
       totalWards: 35,
@@ -780,7 +780,7 @@ const counties = [
     },
     {
       county_id: 4,
-      countyName: 'TANA RIVER',
+      countyName: 'Tana River',
       countyCode: '004',
       totalConstituencies: 3,
       totalWards: 15,
@@ -921,7 +921,7 @@ const counties = [
     },
     {
       county_id: 5,
-      countyName: 'LAMU',
+      countyName: 'Lamu',
       countyCode: '005',
       totalConstituencies: 2,
       totalWards: 10,
@@ -1018,7 +1018,7 @@ const counties = [
     },
     {
       county_id: 6,
-      countyName: 'TAITA TAVETA',
+      countyName: 'Taita Taveta',
       countyCode: '006',
       totalConstituencies: 4,
       totalWards: 20,
@@ -1203,7 +1203,7 @@ const counties = [
     },
     {
       county_id: 7,
-      countyName: 'GARISSA',
+      countyName: 'Garissa',
       countyCode: '007',
       totalConstituencies: 6,
       totalWards: 30,
@@ -1476,7 +1476,7 @@ const counties = [
     },
     {
       county_id: 8,
-      countyName: 'WAJIR',
+      countyName: 'Wajir',
       countyCode: '008',
       totalConstituencies: 6,
       totalWards: 30,
@@ -1749,7 +1749,7 @@ const counties = [
     },
     {
       county_id: 9,
-      countyName: 'MANDERA',
+      countyName: 'Mandera',
       countyCode: '009',
       totalConstituencies: 6,
       totalWards: 30,
@@ -2022,7 +2022,7 @@ const counties = [
     },
     {
       county_id: 10,
-      countyName: 'MARSABIT',
+      countyName: 'Marsabit',
       countyCode: '010',
       totalConstituencies: 4,
       totalWards: 20,
@@ -2207,7 +2207,7 @@ const counties = [
     },
     {
       county_id: 11,
-      countyName: 'ISIOLO',
+      countyName: 'Isiolo',
       countyCode: '011',
       totalConstituencies: 2,
       totalWards: 10,
@@ -2304,7 +2304,7 @@ const counties = [
     },
     {
       county_id: 12,
-      countyName: 'MERU',
+      countyName: 'Meru',
       countyCode: '012',
       totalConstituencies: 9,
       totalWards: 45,
@@ -2709,7 +2709,7 @@ const counties = [
     },
     {
       county_id: 13,
-      countyName: 'THARAKA-NITHI',
+      countyName: 'Tharaka-Nithi',
       countyCode: '013',
       totalConstituencies: 3,
       totalWards: 15,
@@ -2850,7 +2850,7 @@ const counties = [
     },
     {
       county_id: 14,
-      countyName: 'EMBU',
+      countyName: 'Embu',
       countyCode: '014',
       totalConstituencies: 4,
       totalWards: 20,
@@ -3035,7 +3035,7 @@ const counties = [
     },
     {
       county_id: 15,
-      countyName: 'KITUI',
+      countyName: 'Kitui',
       countyCode: '015',
       totalConstituencies: 8,
       totalWards: 40,
@@ -3396,7 +3396,7 @@ const counties = [
     },
     {
       county_id: 16,
-      countyName: 'MACHAKOS',
+      countyName: 'Machakos',
       countyCode: '016',
       totalConstituencies: 8,
       totalWards: 40,
@@ -3757,7 +3757,7 @@ const counties = [
     },
     {
       county_id: 17,
-      countyName: 'MAKUENI',
+      countyName: 'Makueni',
       countyCode: '017',
       totalConstituencies: 6,
       totalWards: 30,
@@ -4030,7 +4030,7 @@ const counties = [
     },
     {
       county_id: 18,
-      countyName: 'NYANDARUA',
+      countyName: 'Nyandarua',
       countyCode: '018',
       totalConstituencies: 5,
       totalWards: 25,
@@ -4259,7 +4259,7 @@ const counties = [
     },
     {
       county_id: 19,
-      countyName: 'NYERI',
+      countyName: 'Nyeri',
       countyCode: '019',
       totalConstituencies: 6,
       totalWards: 30,
@@ -4532,7 +4532,7 @@ const counties = [
     },
     {
       county_id: 20,
-      countyName: 'KIRINYAGA',
+      countyName: 'Kirinyaga',
       countyCode: '020',
       totalConstituencies: 4,
       totalWards: 20,
@@ -4717,7 +4717,7 @@ const counties = [
     },
     {
       county_id: 21,
-      countyName: "MURANG'A",
+      countyName: "Murang'a",
       countyCode: '021',
       totalConstituencies: 7,
       totalWards: 35,
@@ -5034,7 +5034,7 @@ const counties = [
     },
     {
       county_id: 22,
-      countyName: 'KIAMBU',
+      countyName: 'Kiambu',
       countyCode: '022',
       totalConstituencies: 12,
       totalWards: 60,
@@ -5571,7 +5571,7 @@ const counties = [
     },
     {
       county_id: 23,
-      countyName: 'TURKANA',
+      countyName: 'Turkana',
       countyCode: '023',
       totalConstituencies: 6,
       totalWards: 30,
@@ -5844,7 +5844,7 @@ const counties = [
     },
     {
       county_id: 24,
-      countyName: 'WEST POKOT',
+      countyName: 'West Pokot',
       countyCode: '024',
       totalConstituencies: 4,
       totalWards: 20,
@@ -6029,7 +6029,7 @@ const counties = [
     },
     {
       county_id: 25,
-      countyName: 'SAMBURU',
+      countyName: 'Samburu',
       countyCode: '025',
       totalConstituencies: 3,
       totalWards: 15,
@@ -6170,7 +6170,7 @@ const counties = [
     },
     {
       county_id: 26,
-      countyName: 'TRANS NZOIA',
+      countyName: 'Trans Nzoia',
       countyCode: '026',
       totalConstituencies: 5,
       totalWards: 25,
@@ -6399,7 +6399,7 @@ const counties = [
     },
     {
       county_id: 27,
-      countyName: 'UASIN GISHU',
+      countyName: 'Uasin Gishu',
       countyCode: '027',
       totalConstituencies: 6,
       totalWards: 30,
@@ -6672,7 +6672,7 @@ const counties = [
     },
     {
       county_id: 28,
-      countyName: 'ELGEYO MARAKWET',
+      countyName: 'Elgeyo Marakwet',
       countyCode: '028',
       totalConstituencies: 4,
       totalWards: 20,
@@ -6857,7 +6857,7 @@ const counties = [
     },
     {
       county_id: 29,
-      countyName: 'NANDI',
+      countyName: 'Nandi',
       countyCode: '029',
       totalConstituencies: 6,
       totalWards: 30,
@@ -7130,7 +7130,7 @@ const counties = [
     },
     {
       county_id: 30,
-      countyName: 'BARINGO',
+      countyName: 'Baringo',
       countyCode: '030',
       totalConstituencies: 6,
       totalWards: 30,
@@ -7403,7 +7403,7 @@ const counties = [
     },
     {
       county_id: 31,
-      countyName: 'LAIKIPIA',
+      countyName: 'Laikipia',
       countyCode: '031',
       totalConstituencies: 3,
       totalWards: 15,
@@ -7544,7 +7544,7 @@ const counties = [
     },
     {
       county_id: 32,
-      countyName: 'NAKURU',
+      countyName: 'Nakuru',
       countyCode: '032',
       totalConstituencies: 11,
       totalWards: 55,
@@ -8037,7 +8037,7 @@ const counties = [
     },
     {
       county_id: 33,
-      countyName: 'NAROK',
+      countyName: 'Narok',
       countyCode: '033',
       totalConstituencies: 6,
       totalWards: 30,
@@ -8310,7 +8310,7 @@ const counties = [
     },
     {
       county_id: 34,
-      countyName: 'KAJIADO',
+      countyName: 'Kajiado',
       countyCode: '034',
       totalConstituencies: 5,
       totalWards: 25,
@@ -8539,7 +8539,7 @@ const counties = [
     },
     {
       county_id: 35,
-      countyName: 'KERICHO',
+      countyName: 'Kericho',
       countyCode: '035',
       totalConstituencies: 6,
       totalWards: 30,
@@ -8812,7 +8812,7 @@ const counties = [
     },
     {
       county_id: 36,
-      countyName: 'BOMET',
+      countyName: 'Bomet',
       countyCode: '036',
       totalConstituencies: 5,
       totalWards: 25,
@@ -9041,7 +9041,7 @@ const counties = [
     },
     {
       county_id: 37,
-      countyName: 'KAKAMEGA',
+      countyName: 'Kakamega',
       countyCode: '037',
       totalConstituencies: 12,
       totalWards: 60,
@@ -9578,7 +9578,7 @@ const counties = [
     },
     {
       county_id: 38,
-      countyName: 'VIHIGA',
+      countyName: 'Vihiga',
       countyCode: '038',
       totalConstituencies: 5,
       totalWards: 25,
@@ -9807,7 +9807,7 @@ const counties = [
     },
     {
       county_id: 39,
-      countyName: 'BUNGOMA',
+      countyName: 'Bungoma',
       countyCode: '039',
       totalConstituencies: 9,
       totalWards: 45,
@@ -10212,7 +10212,7 @@ const counties = [
     },
     {
       county_id: 40,
-      countyName: 'BUSIA',
+      countyName: 'Busia',
       countyCode: '040',
       totalConstituencies: 7,
       totalWards: 35,
@@ -10529,7 +10529,7 @@ const counties = [
     },
     {
       county_id: 41,
-      countyName: 'SIAYA',
+      countyName: 'Siaya',
       countyCode: '041',
       totalConstituencies: 6,
       totalWards: 30,
@@ -10802,7 +10802,7 @@ const counties = [
     },
     {
       county_id: 42,
-      countyName: 'KISUMU',
+      countyName: 'Kisumu',
       countyCode: '042',
       totalConstituencies: 7,
       totalWards: 35,
@@ -11119,7 +11119,7 @@ const counties = [
     },
     {
       county_id: 43,
-      countyName: 'HOMABAY',
+      countyName: 'Homabay',
       countyCode: '043',
       totalConstituencies: 8,
       totalWards: 40,
@@ -11480,7 +11480,7 @@ const counties = [
     },
     {
       county_id: 44,
-      countyName: 'MIGORI',
+      countyName: 'Migori',
       countyCode: '044',
       totalConstituencies: 8,
       totalWards: 40,
@@ -11841,7 +11841,7 @@ const counties = [
     },
     {
       county_id: 45,
-      countyName: 'KISII',
+      countyName: 'Kisii',
       countyCode: '045',
       totalConstituencies: 9,
       totalWards: 45,
@@ -12246,7 +12246,7 @@ const counties = [
     },
     {
       county_id: 46,
-      countyName: 'NYAMIRA',
+      countyName: 'Nyamira',
       countyCode: '046',
       totalConstituencies: 4,
       totalWards: 20,
@@ -12431,7 +12431,7 @@ const counties = [
     },
     {
       county_id: 47,
-      countyName: 'NAIROBI',
+      countyName: 'Nairobi',
       countyCode: '047',
       totalConstituencies: 17,
       totalWards: 85,
@@ -13188,7 +13188,7 @@ const counties = [
     },
     {
       county_id: 48,
-      countyName: 'DIASPORA',
+      countyName: 'Diaspora',
       countyCode: '048',
       totalConstituencies: 1,
       totalWards: 5,
@@ -13196,41 +13196,41 @@ const counties = [
         {
           constituency_id: 291,
           countyId: 48,
-          constituencyName: 'DIASPORA',
+          constituencyName: 'Diaspora',
           constituencyCode: '291',
           constituencyTotalWards: 5,
           wards: [
             {
               ward_id: 1453,
-              wardName: 'TANZANIA',
+              wardName: 'Tanzania',
               wardCode: '5000',
               wardCountyId: 48,
               wardConstituencyId: 291,
             },
             {
               ward_id: 1454,
-              wardName: 'UGANDA',
+              wardName: 'Uganda',
               wardCode: '5001',
               wardCountyId: 48,
               wardConstituencyId: 291,
             },
             {
               ward_id: 1455,
-              wardName: 'RWANDA',
+              wardName: 'Rwanda',
               wardCode: '5002',
               wardCountyId: 48,
               wardConstituencyId: 291,
             },
             {
               ward_id: 1456,
-              wardName: 'BURUNDI',
+              wardName: 'Burundi',
               wardCode: '5003',
               wardCountyId: 48,
               wardConstituencyId: 291,
             },
             {
               ward_id: 1457,
-              wardName: 'SOUTH AFRICA',
+              wardName: 'South Africa',
               wardCode: '5004',
               wardCountyId: 48,
               wardConstituencyId: 291,
@@ -13241,7 +13241,7 @@ const counties = [
     },
     {
       county_id: 49,
-      countyName: 'PRISONS',
+      countyName: 'Prisons',
       countyCode: '049',
       totalConstituencies: 1,
       totalWards: 1,
