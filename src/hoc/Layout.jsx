@@ -1,16 +1,22 @@
-import React from 'react'
-import Header from '../components/header/Header'
-import Footer from '../components/footer/Footer'
+import React from 'react';
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Header/>
+      {/* Header at the top */}
+      <Header />
+      
+      {/* Main content with space added below the header */}
+      <main style={{ marginTop: '180px' }}> 
         {children}
-      <Footer/>
+      </main>
+
+      {/* Footer at the bottom */}
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
-
+export default Layout;
