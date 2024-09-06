@@ -30,7 +30,7 @@ header .headersearch .selectDrop:after {
     position: absolute;
     top: 6px;
     bottom: 2px;
-    right: 0px;
+    left: 120px;
 }
 
 header .headersearch .search {

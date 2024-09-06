@@ -35,7 +35,7 @@ const Counties = () => {
     return (
         <div className="selectorDrop cursor-pointer flex-grow me-2">
             <span className="openLocation align-items-center text-primary" onClick={toggleLocation}>
-                <FmdGoodOutlinedIcon className="locationIcon ms-2" /> {selectedLocation || 'Your location'} {isOpenLocation ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />}
+                <FmdGoodOutlinedIcon className="locationIcon ms-2" /> {selectedLocation || 'Your Location'} {isOpenLocation ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />}
             </span>
             {isOpenLocation && (
                 <ClickAwayListener onClickAway={() => setIsOpenLocation(false)}>

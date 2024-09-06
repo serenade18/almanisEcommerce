@@ -55,7 +55,7 @@ const Info = () => {
                     <div className="col-xl-4 col-lg-4">
                         <div className="header-info header-info-right">
                             <ul>
-                                <li>Need help? Call Us: <strong className="text-brand text-success">+254 792 902 809</strong></li>
+                                <li>Need help? Call Us: <strong className="text-brand text-success">0792 902 809</strong></li>
                                 <li>
                                     <a className="language-dropdown-active" href="#">English <i className="fi-rs-angle-small-down"></i></a>
                                 </li>
