@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <>
       {/* <Info/> */}
-      <header>
+      <header> 
         <Info/>
         <div className="container-fluid">
           <div className="row align-items-center">
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
 
             {/* Header Search Section */}
-            <div className="col-12 col-sm-9 col-md-10 col-lg-6 mt-2 mt-sm-0">
+            <div className="col-12 col-sm-9 col-md-4 col-lg-5 mt-2 mt-sm-0">
               <div className="headersearch d-flex align-items-center">
                 {/* Category Dropdown */}
                 <Select/>
@@ -44,10 +44,10 @@ const Header = () => {
             </div>
 
             {/* county and wishlist section */}
-            <div className="col-12 col-sm-6 col-lg-5 d-flex align-items-center">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-6 d-flex  align-items-center">
                 <Counties/>
                 <div className="ml-auto d-flex align-items-center">
-                    <ul className="list list-inline mb-0 headerTabs">
+                    <ul className="list ms-5 list-inline mb-0 headerTabs">
                         <li className='list-inline-item'>
                             <span>
                                 <img src={icons.Refresh}/>

@@ -15,14 +15,14 @@ const Nav = () => {
             <div className='nav d-flex align-items-center'>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-2 col-sm-6 col-12 d-flex align-items-center "> 
+                        <div className="col-md-3 col-sm-6 col-12 d-flex align-items-center "> 
                             <Button className="catTab bg-success text-white align-items-center text-capitalize">
                               <DashboardCustomizeOutlinedIcon className='me-1'/> 
                               Browse All Categories
                               <KeyboardArrowDownOutlinedIcon className='ms-2 text-sm'/>
                             </Button>
                         </div>
-                        <div className="col-md-8 col-sm-12 col-12 d-flex align-items-center"> 
+                        <div className="col-md-7 col-sm-12 col-12 d-flex align-items-center"> 
                             <nav>
                               <ul className="list list-inline mb-0">
                                 <li className="list-inline-item">
