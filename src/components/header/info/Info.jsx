@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../info/info.css';
 import { ClickAwayListener } from '@mui/material';
 import flags from '../../../constants/flags';
-
+import { Link } from 'react-router-dom';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 
@@ -34,10 +34,10 @@ const Info = () => {
                     <div className="d-flex col-xl-4 col-lg-4">
                         <div className="header-info">
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Wishlist</a></li>
-                                <li><a href="#">Order Tracking</a></li>
+                                <li><Link to={'/about'}>About Us</Link></li>
+                                <li><Link to={''}>My Account</Link></li>
+                                <li><Link to={''}>Wishlist</Link></li>
+                                <li><Link to={''}>Order Tracking</Link></li>
                             </ul>
                         </div>
                     </div>

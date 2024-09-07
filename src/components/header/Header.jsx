@@ -13,6 +13,7 @@ import SettingsInputCompositeOutlinedIcon from '@mui/icons-material/SettingsInpu
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import Info from './info/Info';
 import Nav from './nav/Nav';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -24,7 +25,9 @@ const Header = () => {
           <div className="row align-items-center">
             {/* Logo */}
             <div className="col-12 col-sm-3 col-md-2 col-lg-1">
-              <img src={icons.Logo} alt="Logo" className="img-fluid" />
+              <Link to={'/'}>
+                <img src={icons.Logo} alt="Logo" className="img-fluid" />
+              </Link>
             </div>
 
             {/* Header Search Section */}
