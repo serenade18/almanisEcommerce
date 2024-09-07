@@ -18,7 +18,7 @@ const Nav = () => {
                         <div className="col-md-3 col-sm-6 col-12 d-flex align-items-center "> 
                             <Button className="catTab bg-success text-white align-items-center text-capitalize">
                               <DashboardCustomizeOutlinedIcon className='me-1'/> 
-                              Browse All Categories
+                                Browse All Categories
                               <KeyboardArrowDownOutlinedIcon className='ms-2 text-sm'/>
                             </Button>
                         </div>
@@ -74,8 +74,8 @@ const Nav = () => {
                                     <HeadsetOutlinedIcon className='text-secondary me-2'/>
                                 </span>
                                 <div className="info ml-3">
-                                    <h5 className="text-success mb-0">+254 792 902 809</h5>
-                                    <p className="mb-0 text-secondary mt-1">24/7 support center</p>
+                                    <h6 className="text-success mb-0 text-sm">+254 792 902 809</h6>
+                                    <p className="mb-0 text-secondary mt-1 text-sm">24/7 support center</p>
                                 </div>
                             </div>
                         </div>

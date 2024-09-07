@@ -8,7 +8,7 @@
 
 .nav .catTab {
     padding: 10px 20px !important;
-    font-size: 15px !important;
+    font-size: 13px !important;
     border-radius: 5px !important;
 }
 
@@ -21,9 +21,13 @@
 .nav nav ul li button a {
     text-decoration: none !important;
     color: rgba(0, 0, 0, 0.7) !important;
-    font-size: 19px !important;
+    font-size: 15px !important;
+}
+
+.nav .phoneNo p {
+    font-size: 12px !important;
 }
 
 .nav .phoneNo svg {
-    font-size: 50px !important;
+    font-size: 45px !important;
 }

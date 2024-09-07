@@ -18,7 +18,7 @@ function App() {
           <img 
             src={icons.Loader} 
             alt="Loading..." 
-            style={{ width: '150px', height: '150px' }} // Adjust the size if necessary
+            style={{ width: '150px', height: '150px' }}
           />
         </div>
       }>

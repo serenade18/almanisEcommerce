@@ -4,7 +4,7 @@
 
 .selectorDrop {
     position: relative; /* Ensure the dropdown positioning is relative to this container */
-    width: 33%;
+    width: 28%;
 }
 
 .selectorDrop .openLocation {

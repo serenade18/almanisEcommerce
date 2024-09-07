@@ -56,12 +56,12 @@ header .headerTabs {
 }
 
 header .headerTabs li {
-    margin-left: 20px;
+    margin-left: 30px;
     position: relative;
 }
 
 header .headerTabs li span{
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -74,7 +74,7 @@ header .headerTabs li span.badge{
     width: 20px;
     border-radius: 100%;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     line-height: 12px;
 }
