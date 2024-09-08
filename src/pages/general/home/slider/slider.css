@@ -14,12 +14,34 @@
 /* Arrow button styling */
 .slick-arrow {
     position: absolute;
-    top: 57%;
+    top: 47%;
     width: 40px !important;
     height: 40px !important;
     border-radius: 50% !important;
     background-color: aquamarine !important;
     z-index: 1; /* Ensure arrows are above the slider content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Font Awesome Left Arrow (previous) */
+.slick-prev:before {
+    content: '\f053'; /* Font Awesome unicode for left arrow */
+    font-family: "Font Awesome 5 Free"; /* Ensure it's using Font Awesome */
+    font-weight: 900; /* Use solid version */
+    font-size: 20px;
+    color: black;
+}
+
+/* Font Awesome Right Arrow (next) */
+.slick-next:before {
+    content: '\f054'; /* Font Awesome unicode for right arrow */
+    font-family: "Font Awesome 5 Free"; /* Ensure it's using Font Awesome */
+    font-weight: 900; /* Use solid version */
+    font-size: 20px;
+    color: black;
 }
 
 /* Left arrow (previous) */
@@ -30,10 +52,4 @@
 /* Right arrow (next) */
 .slick-next {
     right: 5% !important; /* Position it to the right */
-}
-
-/* Optional: You can style the icon inside the arrow if needed */
-.slick-arrow:before {
-    font-size: 20px; /* Adjust icon size */
-    color: black; /* Arrow color */
 }
