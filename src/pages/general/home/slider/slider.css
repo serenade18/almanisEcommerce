@@ -14,24 +14,30 @@
 /* Arrow button styling */
 .slick-arrow {
     position: absolute;
-    top: 47%;
-    width: 40px !important;
-    height: 40px !important;
+    top: 57%;
+    width: 30px !important;
+    height: 30px !important;
     border-radius: 50% !important;
-    background-color: aquamarine !important;
-    z-index: 1; /* Ensure arrows are above the slider content */
+    background-color: #f2f3f4 !important;
+    z-index: 100; /* Ensure arrows are above the slider content */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
+
+.slick-arrow:hover {
+    background-color: aquamarine !important;
+}
+
 
 /* Font Awesome Left Arrow (previous) */
 .slick-prev:before {
     content: '\f053'; /* Font Awesome unicode for left arrow */
     font-family: "Font Awesome 5 Free"; /* Ensure it's using Font Awesome */
     font-weight: 900; /* Use solid version */
-    font-size: 20px;
+    font-size: 17px;
     color: black;
 }
 
@@ -40,7 +46,7 @@
     content: '\f054'; /* Font Awesome unicode for right arrow */
     font-family: "Font Awesome 5 Free"; /* Ensure it's using Font Awesome */
     font-weight: 900; /* Use solid version */
-    font-size: 20px;
+    font-size: 17px;
     color: black;
 }
 
