@@ -5,6 +5,11 @@
     padding: 25px 0px;
 }
 
+.homeSlider .slick-dots {
+    position: absolute;
+    bottom: 30px !important;
+}
+
 .slider-main {
     border-radius: 25px;
     overflow: hidden;
@@ -14,7 +19,7 @@
 /* Arrow button styling */
 .slick-arrow {
     position: absolute;
-    top: 57%;
+    top: 49.5%;
     width: 30px !important;
     height: 30px !important;
     border-radius: 50% !important;
@@ -25,6 +30,7 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .slick-arrow:hover {
@@ -34,28 +40,53 @@
 
 /* Font Awesome Left Arrow (previous) */
 .slick-prev:before {
-    content: '\f053'; /* Font Awesome unicode for left arrow */
-    font-family: "Font Awesome 5 Free"; /* Ensure it's using Font Awesome */
-    font-weight: 900; /* Use solid version */
+    content: '\f053'; 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
     font-size: 17px;
     color: black;
 }
 
 /* Font Awesome Right Arrow (next) */
 .slick-next:before {
-    content: '\f054'; /* Font Awesome unicode for right arrow */
-    font-family: "Font Awesome 5 Free"; /* Ensure it's using Font Awesome */
-    font-weight: 900; /* Use solid version */
+    content: '\f054'; 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
     font-size: 17px;
     color: black;
 }
 
 /* Left arrow (previous) */
 .slick-prev {
-    left: 5% !important; /* Position it to the left */
+    left: 5% !important; 
 }
 
 /* Right arrow (next) */
 .slick-next {
-    right: 5% !important; /* Position it to the right */
+    right: 5% !important; 
+}
+
+.homeSlider .item {
+    position: relative;
+}
+
+.homeSlider .item .info {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 10;
+}
+
+.homeSlider .item .info h2 {
+    font-size: 85px;
+    font-weight: bolder;
+    color: #343a40;
+    font: sans-serif;
+}
+
+.homeSlider .item .info p {
+    font-size: 33.5px;
+    font-weight: 500;
+    color: #7e7e7e;
+    font: sans-serif;
 }
