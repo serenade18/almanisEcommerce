@@ -12,7 +12,8 @@ const Slide = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        fade: true
+        fade: true,
+        loop: true
       }
     
     // WhatsApp number and message
