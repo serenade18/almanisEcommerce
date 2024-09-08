@@ -11,19 +11,29 @@
     position: relative;
 }
 
+/* Arrow button styling */
 .slick-arrow {
     position: absolute;
-    top: 47%;
+    top: 57%;
     width: 40px !important;
     height: 40px !important;
     border-radius: 50% !important;
     background-color: aquamarine !important;
+    z-index: 1; /* Ensure arrows are above the slider content */
 }
 
-.slick-arrow .slick-next {
-    right: 5% !important;
+/* Left arrow (previous) */
+.slick-prev {
+    left: 5% !important; /* Position it to the left */
 }
 
-.slick-arrow .slick-next {
-    left: 5% !important;
+/* Right arrow (next) */
+.slick-next {
+    right: 5% !important; /* Position it to the right */
+}
+
+/* Optional: You can style the icon inside the arrow if needed */
+.slick-arrow:before {
+    font-size: 20px; /* Adjust icon size */
+    color: black; /* Arrow color */
 }
