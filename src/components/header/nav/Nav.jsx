@@ -68,7 +68,7 @@ const Nav = () => {
                               </ul>
                             </nav>
                         </div>
-                        <div className="col-md-2 col-sm-6 col-12 d-flex align-items-center"> 
+                        <div className="col-md-2 col-sm-6 col-12 d-flex align-items-center justify-content-end"> 
                             <div className="phoneNo d-flex align-items-center ml-auto">
                                 <span>
                                     <HeadsetOutlinedIcon className='text-secondary me-2'/>

@@ -47,8 +47,8 @@ const Header = () => {
             </div>
 
             {/* county and wishlist section */}
-            <div className="col-12 col-sm-6 col-md-6 col-lg-6 d-flex  align-items-center">
-                <Counties/>
+            <div className="col-12 col-sm-6 col-md-6 col-lg-6 d-flex  align-items-center justify-content-end justify-content-between">
+                <Counties className="counties"/>
                 <div className="ml-auto d-flex align-items-center">
                     <ul className="list ms-5 list-inline mb-0 headerTabs">
                         <li className='list-inline-item'>
