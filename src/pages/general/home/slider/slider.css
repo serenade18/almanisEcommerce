@@ -114,13 +114,14 @@
 .homeSlider .whatsAppOrd button {
     background-color: #3bb77e !important;
     padding: 10px 30px !important;
-    border-radius: 30px !important;
+    border-radius: 50px !important;
     color: #fff !important;
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: 15px;
     left: 58%;
     height: 100%;
     font-size: 20px;
     font: caption;
+    text-transform: capitalize !important;
 }
