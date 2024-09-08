@@ -5,7 +5,8 @@ import images from '../../../../constants/images'
 import Button from '@mui/material/Button';
 
 const Slide = () => {
-    var settings = {
+    
+    const settings = {
         dots: true,
         arrows: true,
         infinite: true,
