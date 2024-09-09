@@ -71,13 +71,13 @@
 
 .slider-main .item .info {
     position: absolute;
-    top: 15%;
+    top: 12%;
     left: 10%;
     z-index: 10;
 }
 
 .slider-main .item .info h2 {
-    font-size: 83px;
+    font-size: 78px;
     font-weight: bolder;
     color: #343a40;
     font: sans-serif;
@@ -94,7 +94,7 @@
     width: 600px;
     height: 60px;
     position: absolute;
-    bottom: 130px;
+    bottom: 100px;
     left: 14.8%;
     z-index: 10;
 }
