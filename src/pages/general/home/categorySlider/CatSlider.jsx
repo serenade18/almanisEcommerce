@@ -14,12 +14,12 @@ const CatSlider = () => {
     ]);
 
     const categories = [
-        { img: images.Cat1, name: 'Pishori', items: 26 },
-        { img: images.Cat2, name: 'Komboka', items: 26 },
-        { img: images.Cat3, name: 'Brown', items: 26 },
-        { img: images.Cat4, name: 'Bran', items: 26 },
-        { img: images.Cat5, name: 'Husk', items: 26 },
-        { img: images.Cat6, name: 'Broken', items: 26 },
+        { img: images.Cat1, name: 'Pishori' },
+        { img: images.Cat2, name: 'Komboka' },
+        { img: images.Cat3, name: 'Brown' },
+        { img: images.Cat4, name: 'Bran' },
+        { img: images.Cat5, name: 'Husk' },
+        { img: images.Cat6, name: 'Broken' },
     ];
 
     const settings = {
@@ -46,7 +46,6 @@ const CatSlider = () => {
                                 <div className="info">
                                     <img src={category.img} alt={category.name} />
                                     <h5>{category.name}</h5>
-                                    <p>{category.items} items</p>
                                 </div>
                             </div>
                         ))}
