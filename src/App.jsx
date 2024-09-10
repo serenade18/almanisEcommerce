@@ -36,6 +36,7 @@ function App() {
           <Route exact={true} path="/contact" element={<Layout><Contact /></Layout>}/>
         </Routes>
       </Suspense>
+      {/* WhatsApp widget */}
       <WhatsAppWidget companyName={'Almanis soko'} inputPlaceHolder={"Write message"} sendButtonText={'Send'} message={'Hello,\n\how can we assist you ?'} phoneNumber="+254792902809" />
     </Router>
   )
