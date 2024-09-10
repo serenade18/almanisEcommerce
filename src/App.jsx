@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import { WhatsAppWidget } from 'react-whatsapp-widget';
+import 'react-whatsapp-widget/dist/index.css';
 import './App.css' 
 import Layout from './hoc/Layout';
 import icons from './constants/icons';
@@ -34,6 +36,7 @@ function App() {
           <Route exact={true} path="/contact" element={<Layout><Contact /></Layout>}/>
         </Routes>
       </Suspense>
+      <WhatsAppWidget companyName={'Almanis soko'} inputPlaceHolder={"Write message"} sendButtonText={'Send'} message={'Hello,\n\how can we assist you ?'} phoneNumber="+254792902809" />
     </Router>
   )
 }
