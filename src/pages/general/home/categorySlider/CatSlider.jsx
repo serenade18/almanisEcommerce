@@ -17,9 +17,9 @@ const CatSlider = () => {
         { img: images.Cat1, name: 'Pishori' },
         { img: images.Cat2, name: 'Komboka' },
         { img: images.Cat3, name: 'Brown' },
+        { img: images.Cat6, name: 'Broken' },
         { img: images.Cat4, name: 'Bran' },
         { img: images.Cat5, name: 'Husk' },
-        { img: images.Cat6, name: 'Broken' },
     ];
 
     const settings = {
