@@ -1,5 +1,5 @@
-import Slider1 from "../assets/images/slider/slider-1.png";
-import Slider2 from "../assets/images/slider/slider-2.png";
+import Slider1 from "../assets/images/slider/sliderbeans.svg";
+import Slider2 from "../assets/images/slider/mweaslude.svg";
 import Cat1 from "../assets/images/cat-13.png"
 import Cat2 from "../assets/images/cat-2.png"
 import Cat3 from "../assets/images/cat-5.png"

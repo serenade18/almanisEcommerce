@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import './App.css'
+import './App.css' 
 import Layout from './hoc/Layout';
 import icons from './constants/icons';
 
