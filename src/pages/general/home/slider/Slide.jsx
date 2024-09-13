@@ -9,6 +9,8 @@ const Slide = () => {
     const settings = {
         dots: true,
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 10000,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
