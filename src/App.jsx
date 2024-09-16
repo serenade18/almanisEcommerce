@@ -1,45 +1,35 @@
-import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-import { WhatsAppWidget } from 'react-whatsapp-widget';
-import 'react-whatsapp-widget/dist/index.css';
-import './App.css' 
-import Layout from './hoc/Layout';
-import icons from './constants/icons';
-
-// lazy load general pages
-const Home = lazy(() => import('./pages/general/home/Home'))
-const About = lazy(() => import('./pages/general/about/About'))
-const Shop = lazy(() => import('./pages/general/shop/Shop'))
-const Partner = lazy(() => import('./pages/general/partner/Partner'))
-const Contact = lazy(() => import('./pages/general/contact/Contact'))
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
-    <Router>
-      <Suspense fallback={
-        <div className="d-flex justify-content-center align-items-center min-vh-100">
-          <img 
-            src={icons.Loader} 
-            alt="Loading..." 
-            style={{ width: '150px', height: '150px' }}
-          />
-        </div>
-      }>
-        <Routes>
-          {/* general pages */}
-          <Route exact={true} path="/" element={<Layout><Home /></Layout>}/>
-          <Route exact={true} path="/about" element={<Layout><About /></Layout>}/>
-          <Route exact={true} path="/shop" element={<Layout><Shop /></Layout>}/>
-          <Route exact={true} path="/partner" element={<Layout><Partner /></Layout>}/>
-          <Route exact={true} path="/contact" element={<Layout><Contact /></Layout>}/>
-        </Routes>
-      </Suspense>
-      {/* WhatsApp widget */}
-      <WhatsAppWidget companyName={'Almanis soko'} inputPlaceHolder={"Write message"} sendButtonText={'Send'} message={'Hello,\n\how can we assist you ?'} phoneNumber="+254792902809" />
-    </Router>
+    <>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
   )
 }
 
-export default App;
+export default App
