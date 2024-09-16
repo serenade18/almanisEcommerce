@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgs-prima: #3bb77e;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-top: 0px ;
+  padding-left: 110px;
+  padding-right: 110px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bd {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
