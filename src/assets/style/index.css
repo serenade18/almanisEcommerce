@@ -1,0 +1,47 @@
+@import '../../pages/general/home/home.css';
+@import '../../pages/general/home/slider/slider.css';
+@import '../../pages/general/home/categorySlider/cat.css';
+@import '../../pages/general/about/about.css';
+@import '../../pages/general/contact/contact.css';
+@import '../../pages/general/partner/partner.css';
+@import '../../pages/general/shop/shop.css';
+@import '../../components/header/Header.css';
+@import '../../components/header/info/info.css';
+@import '../../components/header/nav/nav.css';
+@import '../../components/header/selectDropdown/select.css';
+@import '../../components/header/selectLocation/counties.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #3bb77e;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-top: 0px ;
+  padding-left: 110px;
+  padding-right: 110px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bd {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}

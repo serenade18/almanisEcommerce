@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../selectLocation/counties.css';
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
@@ -11,7 +10,6 @@ const Counties = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedLocation, setSelectedLocation] = useState('');
 
-    // Flatten the counties data to get just the county names
     const location = counties.map(county => county.countyName);
 
     const toggleLocation = () => {
@@ -33,33 +31,34 @@ const Counties = () => {
     );
 
     return (
-        <div className="selectorDrop cursor-pointer flex-grow me-2">
-            <span className="openLocation align-items-center text-primary" onClick={toggleLocation}>
-                <FmdGoodOutlinedIcon className="locationIcon ms-2" /> {selectedLocation || 'Your Location'} {isOpenLocation ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />}
+        <div className="flex-grow cursor-pointer me-2">
+            <span className="flex items-center text-blue-500" onClick={toggleLocation}>
+                <FmdGoodOutlinedIcon className="ml-2" /> {selectedLocation || 'Your Location'} {isOpenLocation ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />}
             </span>
             {isOpenLocation && (
                 <ClickAwayListener onClickAway={() => setIsOpenLocation(false)}>
-                    <div className="selection">
-                        <div className="searchField">
+                    <div className="absolute bg-white shadow-lg mt-2 rounded">
+                        <div className="p-2">
                             <input
                                 type="text"
                                 placeholder="Search location"
                                 value={searchQuery}
                                 onChange={handleSearchChange}
+                                className="border border-gray-300 rounded p-2 w-full"
                             />
-                            <ul className="selectLocation">
+                            <ul className="max-h-60 overflow-y-auto">
                                 {filteredLocation.length > 0 ? (
                                     filteredLocation.map((location, index) => (
                                         <li
                                             key={index}
                                             onClick={() => handleLocationSelect(location)}
-                                            className={location === selectedLocation ? 'active' : ''}
+                                            className={`cursor-pointer p-2 hover:bg-gray-200 ${location === selectedLocation ? 'bg-blue-100' : ''}`}
                                         >
                                             {location}
                                         </li>
                                     ))
                                 ) : (
-                                    <li>No location found</li>
+                                    <li className="p-2">No location found</li>
                                 )}
                             </ul>
                         </div>

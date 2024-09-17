@@ -16,7 +16,7 @@ const currencies = [
 
 const Info = () => {
     const [isCurrencyOpen, setIsCurrencyOpen] = useState(false);
-    const [selectedCurrency, setSelectedCurrency] = useState(currencies[0]); // Default to KES
+    const [selectedCurrency, setSelectedCurrency] = useState(currencies[0]);
 
     const openCurrency = () => {
         setIsCurrencyOpen(!isCurrencyOpen);
@@ -28,59 +28,47 @@ const Info = () => {
     };
 
     return (
-        <div className='header-top header-top-ptb-1 d-none d-lg-block'>
-            <div className='container-fluid'>
-                <div className="row align-items-center justify-content-between">
-                    <div className="d-flex col-xl-4 col-lg-4">
-                        <div className="header-info">
-                            <ul>
-                                <li><Link to={'/about'}>About Us</Link></li>
-                                <li><Link to={''}>My Account</Link></li>
-                                <li><Link to={''}>Wishlist</Link></li>
-                                <li><Link to={''}>Order Tracking</Link></li>
+        <div className='hidden lg:block pt-4 pb-4'>
+            <div className='container mx-auto'>
+                <div className="flex items-center justify-between">
+                    <div className="flex flex-col md:flex-row md:space-x-4">
+                        <div className="flex space-x-4">
+                            <Link to={'/about'} className="text-gray-600">About Us</Link>
+                            <Link to={''} className="text-gray-600">My Account</Link>
+                            <Link to={''} className="text-gray-600">Wishlist</Link>
+                            <Link to={''} className="text-gray-600">Order Tracking</Link>
+                        </div>
+                    </div>
+                    <div className="flex justify-center">
+                        <div id="news-flash" className="inline-block overflow-hidden relative h-4">
+                            <ul className="absolute m-0 p-0 top-0">
+                                <li className="m-0 p-0 h-4">Trendy 25silver jewelry, save up 35% off today</li>
+                                <li className="m-0 p-0 h-4">100% Secure delivery without contacting the courier</li>
+                                <li className="m-0 p-0 h-4">Supper Value Deals - Save more with coupons</li>
                             </ul>
                         </div>
                     </div>
-                    <div className="col-xl-4 col-lg-4">
-                        <div className="text-center">
-                            <div id="news-flash" className="d-inline-block" style={{ overflow: "hidden", position: "relative", height: "14px" }}>
-                                <ul style={{ position: "absolute", margin: "0px", padding: "0px", top: "0px" }}>
-                                    <li style={{ margin: "0px", padding: "0px", height: "14px" }}>Trendy 25silver jewelry, save up 35% off today</li>
-                                    <li style={{ margin: "0px", padding: "0px", height: "14px" }}>100% Secure delivery without contacting the courier</li>
-                                    <li style={{ margin: "0px", padding: "0px", height: "14px" }}>Supper Value Deals - Save more with coupons</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-lg-4">
-                        <div className="header-info header-info-right">
-                            <ul>
-                                <li>Need help? Call Us: <strong className="text-brand text-success">0792 902 809</strong></li>
-                                <li>
-                                    <a className="language-dropdown-active" href="#">English <i className="fi-rs-angle-small-down"></i></a>
-                                </li>
-                                <li>
-                                    <a className="language-dropdown-active" href="#" onClick={openCurrency}>
-                                        <img src={selectedCurrency.flag} style={{height:'20px', width: '20px', marginRight: "5px"}} alt={selectedCurrency.code} />
-                                         {selectedCurrency.code}
-                                        {isCurrencyOpen ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />} 
-                                    </a>
-                                    {isCurrencyOpen && (
-                                        <ClickAwayListener onClickAway={() => setIsCurrencyOpen(false)}>
-                                            <ul className="language-dropdown">
-                                                {currencies.map((currency) => (
-                                                    <li key={currency.code} onClick={() => handleSelectedCurrency(currency)}>
-                                                        <span>
-                                                            <img src={currency.flag} style={{height:'20px', width: '20px', marginRight: "5px"}} alt={currency.code} />
-                                                            {currency.code} - {currency.name}
-                                                        </span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </ClickAwayListener>
-                                    )}
-                                </li>
-                            </ul>
+                    <div className="flex flex-col md:flex-row md:space-x-4">
+                        <div className="flex space-x-2">
+                            <span>Need help? Call Us: <strong className="text-brand text-green-600">0792 902 809</strong></span>
+                            <a className="relative cursor-pointer">English <i className="fi-rs-angle-small-down"></i></a>
+                            <a className="relative cursor-pointer" onClick={openCurrency}>
+                                <img src={selectedCurrency.flag} className="h-5 w-5 mr-1" alt={selectedCurrency.code} />
+                                {selectedCurrency.code}
+                                {isCurrencyOpen ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />} 
+                            </a>
+                            {isCurrencyOpen && (
+                                <ClickAwayListener onClickAway={() => setIsCurrencyOpen(false)}>
+                                    <ul className="absolute bg-white border border-gray-300 shadow-lg">
+                                        {currencies.map((currency) => (
+                                            <li key={currency.code} onClick={() => handleSelectedCurrency(currency)} className="flex items-center p-2 hover:bg-gray-100 cursor-pointer">
+                                                <img src={currency.flag} className="h-5 w-5 mr-2" alt={currency.code} />
+                                                {currency.code} - {currency.name}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </ClickAwayListener>
+                            )}
                         </div>
                     </div>
                 </div>

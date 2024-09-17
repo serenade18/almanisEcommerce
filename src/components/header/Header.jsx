@@ -1,5 +1,4 @@
 import React from 'react';
-import '../header/Header.css';
 import icons from '../../constants/icons';
 import SearchIcon from '@mui/icons-material/Search';
 import Select from './selectDropdown/Select';
@@ -18,106 +17,104 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <>
-      {/* <Info/> */}
-      <header> 
-        <Info/>
-        <div className="container-fluid">
-          <div className="row align-items-center">
+      <header className="bg-white shadow">
+        <Info />
+        <div className="container mx-auto flex flex-col">
+          <div className="flex items-center">
             {/* Logo */}
-            <div className="col-12 col-sm-3 col-md-2 col-lg-1">
+            <div className="w-full sm:w-1/4 md:w-1/5 lg:w-1/6">
               <Link to={'/'}>
-                <img src={icons.Logo} alt="Logo" className="img-fluid" />
+                <img src={icons.Logo} alt="Logo" className="w-full" />
               </Link>
             </div>
 
             {/* Header Search Section */}
-            <div className="col-12 col-sm-9 col-md-4 col-lg-5 mt-2 mt-sm-0">
-              <div className="headersearch d-flex align-items-center">
+            <div className="w-full sm:w-3/4 md:w-2/5 lg:w-5/12 mt-2 sm:mt-0">
+              <div className="flex items-center">
                 {/* Category Dropdown */}
-                <Select/>
+                <Select />
                 {/* Search Input */}
-                <div className="search d-flex align-items-center flex-grow-1">
+                <div className="flex items-center flex-grow ml-2">
                   <input
                     type="text"
                     placeholder="Search for items..."
+                    className="border rounded p-2 flex-grow"
                   />
-                  <SearchIcon className="searchicon ms-2" />
+                  <SearchIcon className="ml-2" />
                 </div>
               </div>
             </div>
 
-            {/* county and wishlist section */}
-            <div className="col-12 col-sm-6 col-md-6 col-lg-6 d-flex  align-items-center justify-content-end justify-content-between">
-                <Counties className="counties"/>
-                <div className="ml-auto d-flex align-items-center">
-                    <ul className="list ms-5 list-inline mb-0 headerTabs">
-                        <li className='list-inline-item'>
-                            <span>
-                                <img src={icons.Refresh}/>
-                                <span className='badge bg-success rounded-circle'>3</span>
-                                Compare
-                            </span>
-                        </li>
-                        <li className='list-inline-item'>
-                            <span>
-                                <img src={icons.Wish}/>
-                                <span className='badge bg-success rounded-circle'>3</span>
-                                Wishlist
-                            </span>
-                        </li>
-                        <li className='list-inline-item'>
-                            <span>
-                                <img src={icons.Cart}/>
-                                <span className='badge bg-success rounded-circle'>3</span>
-                                Cart
-                            </span>
-                        </li>
-                        <li className='list-inline-item'>
-                            <span>
-                                <img src={icons.User}/>
-                                Account
-                            </span>
-
-                            <ul className="dropdownMenu">
-                                <li>
-                                  <Button>
-                                    <PersonOutlineOutlinedIcon/>
-                                    My Account
-                                  </Button>
-                                </li>
-                                <li>
-                                  <Button>
-                                    <GpsFixedOutlinedIcon/>
-                                    Order Tracking
-                                  </Button>
-                                </li>
-                                <li>
-                                  <Button>
-                                    <FavoriteBorderOutlinedIcon/>
-                                    My Wishlist
-                                  </Button>
-                                </li>
-                                <li>
-                                  <Button>
-                                    <SettingsInputCompositeOutlinedIcon/>
-                                    Settings
-                                  </Button>
-                                </li>
-                                <li>
-                                  <Button>
-                                    <LogoutOutlinedIcon/>
-                                    Sign out
-                                  </Button>
-                                </li>
-                            </ul>
-                        </li>
+            {/* County and Wishlist Section */}
+            <div className="w-full sm:w-3/5 md:w-3/5 lg:w-5/12 flex items-center justify-end space-x-5">
+              <Counties className="counties" />
+              <div className="flex items-center">
+                <ul className="flex space-x-5 list-none mb-0">
+                  <li>
+                    <span className="flex items-center">
+                      <img src={icons.Refresh} alt="Refresh" />
+                      <span className="bg-green-500 text-white rounded-full px-2 ml-1">3</span>
+                      Compare
+                    </span>
+                  </li>
+                  <li>
+                    <span className="flex items-center">
+                      <img src={icons.Wish} alt="Wishlist" />
+                      <span className="bg-green-500 text-white rounded-full px-2 ml-1">3</span>
+                      Wishlist
+                    </span>
+                  </li>
+                  <li>
+                    <span className="flex items-center">
+                      <img src={icons.Cart} alt="Cart" />
+                      <span className="bg-green-500 text-white rounded-full px-2 ml-1">3</span>
+                      Cart
+                    </span>
+                  </li>
+                  <li className="relative">
+                    <span className="flex items-center">
+                      <img src={icons.User} alt="Account" />
+                      Account
+                    </span>
+                    <ul className="absolute hidden group-hover:block bg-white shadow-md rounded mt-2">
+                      <li>
+                        <Button>
+                          <PersonOutlineOutlinedIcon />
+                          My Account
+                        </Button>
+                      </li>
+                      <li>
+                        <Button>
+                          <GpsFixedOutlinedIcon />
+                          Order Tracking
+                        </Button>
+                      </li>
+                      <li>
+                        <Button>
+                          <FavoriteBorderOutlinedIcon />
+                          My Wishlist
+                        </Button>
+                      </li>
+                      <li>
+                        <Button>
+                          <SettingsInputCompositeOutlinedIcon />
+                          Settings
+                        </Button>
+                      </li>
+                      <li>
+                        <Button>
+                          <LogoutOutlinedIcon />
+                          Sign out
+                        </Button>
+                      </li>
                     </ul>
-                </div>
-              
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <Nav/>
+        <Nav />
       </header>
     </>
   );

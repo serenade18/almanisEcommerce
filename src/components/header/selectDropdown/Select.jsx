@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../selectDropdown/select.css';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 import { ClickAwayListener } from '@mui/material';
@@ -30,33 +29,34 @@ const Select = () => {
     );
 
     return (
-        <div className="selectDrop cursor-pointer me-2">
-            <span className="openDrop" onClick={toggleDrop}>
+        <div className="relative cursor-pointer me-2">
+            <span className="flex items-center" onClick={toggleDrop}>
                 {selectedCategory || 'All Categories'} {isOpenDrop ? <KeyboardArrowUpOutlinedIcon /> : <KeyboardArrowDownOutlinedIcon />}
             </span>
             {isOpenDrop && (
                 <ClickAwayListener onClickAway={() => setIsOpenDrop(false)}>
-                    <div className="selector">
-                        <div className="searchField">
+                    <div className="absolute z-10 mt-2 bg-white shadow-lg rounded-md">
+                        <div className="p-2">
                             <input
                                 type="text"
                                 placeholder="Search categories"
                                 value={searchQuery}
                                 onChange={handleSearchChange}
+                                className="border border-gray-300 rounded-md p-1 mb-2 w-full"
                             />
-                            <ul className="selectcategory">
+                            <ul className="max-h-60 overflow-y-auto">
                                 {filteredCategories.length > 0 ? (
                                     filteredCategories.map((category, index) => (
                                         <li
                                             key={index}
                                             onClick={() => handleCategorySelect(category)}
-                                            className={category === selectedCategory ? 'active' : ''}
+                                            className={`cursor-pointer p-2 hover:bg-gray-200 ${category === selectedCategory ? 'bg-gray-300' : ''}`}
                                         >
                                             {category}
                                         </li>
                                     ))
                                 ) : (
-                                    <li>No categories found</li>
+                                    <li className="p-2">No categories found</li>
                                 )}
                             </ul>
                         </div>

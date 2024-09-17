@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Slider from 'react-slick'
-import '../categorySlider/cat.css'
 import images from '../../../../constants/images'
 
 const CatSlider = () => {
@@ -35,17 +34,17 @@ const CatSlider = () => {
     return (
         <>
             <div className="catSlider">
-                <div className="container-fluid">
-                    <div className="row d-flex align-items-center">
-                        <h2 className="bd">Featured Categories</h2>
+                <div className="container mx-auto">
+                    <div className="flex items-center">
+                        <h2 className="text-2xl font-bold">Featured Categories</h2>
                     </div>
                     
                     <Slider {...settings} className="sliderCategory">
                         {categories.map((category, index) => (
                             <div className="item" key={index} style={{ backgroundColor: itemBg[index % itemBg.length] }}>
-                                <div className="info">
-                                    <img src={category.img} alt={category.name} />
-                                    <h5>{category.name}</h5>
+                                <div className="info flex flex-col items-center">
+                                    <img src={category.img} alt={category.name} className="w-full h-auto" />
+                                    <h5 className="text-lg mt-2">{category.name}</h5>
                                 </div>
                             </div>
                         ))}

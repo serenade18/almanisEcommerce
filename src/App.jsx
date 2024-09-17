@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { WhatsAppWidget } from 'react-whatsapp-widget';
 import 'react-whatsapp-widget/dist/index.css';
-import './App.css' 
 import Layout from './hoc/Layout';
 import icons from './constants/icons';
 
@@ -19,21 +18,21 @@ function App() {
   return (
     <Router>
       <Suspense fallback={
-        <div className="d-flex justify-content-center align-items-center min-vh-100">
+        <div className="flex justify-center items-center min-h-screen">
           <img 
             src={icons.Loader} 
             alt="Loading..." 
-            style={{ width: '150px', height: '150px' }}
+            className="w-36 h-36"
           />
         </div>
       }>
         <Routes>
           {/* general pages */}
-          <Route exact={true} path="/" element={<Layout><Home /></Layout>}/>
-          <Route exact={true} path="/about" element={<Layout><About /></Layout>}/>
-          <Route exact={true} path="/shop" element={<Layout><Shop /></Layout>}/>
-          <Route exact={true} path="/partner" element={<Layout><Partner /></Layout>}/>
-          <Route exact={true} path="/contact" element={<Layout><Contact /></Layout>}/>
+          <Route path="/" element={<Layout><Home /></Layout>}/>
+          <Route path="/about" element={<Layout><About /></Layout>}/>
+          <Route path="/shop" element={<Layout><Shop /></Layout>}/>
+          <Route path="/partner" element={<Layout><Partner /></Layout>}/>
+          <Route path="/contact" element={<Layout><Contact /></Layout>}/>
         </Routes>
       </Suspense>
       {/* WhatsApp widget */}
